@@ -32,6 +32,9 @@ public class ParkingSpotModel implements Serializable {
     @Column(nullable = false, length = 30)
     private String block;
 
+    @Column(nullable = false, length = 130)
+    private String taxonName;
+
     public UUID getId() {
         return id;
     }
@@ -110,5 +113,12 @@ public class ParkingSpotModel implements Serializable {
 
     public void setBlock(String block) {
         this.block = block;
+    }
+
+    public String getTaxonName() {
+        return taxonName;
+    }
+    public void setTaxonName(String taxonName) {
+        this.taxonName = taxonName;
     }
 }

@@ -22,6 +22,8 @@ public class ParkingSpotDto {
     private String apartment;
     @NotBlank
     private String block;
+    @NotBlank
+    private String taxonName;
 
     public String getParkingSpotNumber() {
         return parkingSpotNumber;
@@ -82,8 +84,13 @@ public class ParkingSpotDto {
     public String getBlock() {
         return block;
     }
-
     public void setBlock(String block) {
         this.block = block;
+    }
+    public String getTaxonName() {
+        return taxonName;
+    }
+    public void setTaxonName(String taxonName) {
+        this.taxonName = taxonName;
     }
 }
